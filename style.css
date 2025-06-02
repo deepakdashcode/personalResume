@@ -1,0 +1,211 @@
+body {
+    background-color: #0a192f;
+}
+.open-menu {
+    display: none;
+}
+.total-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 10fr 2fr;
+}
+
+.sidebar-about {
+    background-color: #0c2f3d;
+    /* outline: 2px solid green; */
+    padding: 10px;
+    text-align: center;
+    color: aliceblue;
+}
+.sidebar-about img{
+    display: block;
+    width: 30%;
+    border-radius: 50%;
+    margin: auto;
+    overflow: hidden;
+}
+.sidebar-container {
+    background-color: #0a192f;
+}
+.sidebar-contact {
+    margin-top: 15%;
+    /* outline: 2px solid red; */
+}
+.sidebar-contact a {
+    margin-top: 10px;
+    display: block;
+}
+.sidebar-contact a img{
+    
+    width: 20%;
+    display: block;
+    margin: auto;
+}
+.sidebar-links-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* outline: 2px solid blue; */
+}
+.sidebar-links-container a{
+    text-decoration: none;
+    color: aliceblue;
+    padding: 8px 15px;
+    text-align: center;
+    background-color: #0a192f;
+    
+    display: block;
+    border-radius: 5px;
+    /* outline: 2px solid; */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.sidebar-links-container a:hover{
+    background-color: #0c2f3d;
+}
+.footer {
+    margin-bottom: 20%;
+}
+.footer-name {
+    color: yellowgreen;
+}
+.footer-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.footer-link {
+    display: block;
+    color: yellowgreen;
+}
+.contact footer {
+    margin-top: 10%;
+}
+.contact h3{
+    text-align: center;
+}
+.main-container {
+    font-family: "Lato", sans-serif;
+    color: white;
+    /* outline: 2px solid red; */
+    width: 95%;
+    margin: auto;
+}
+.main-header {
+    color: aliceblue;
+}
+.main-header p:first-child{
+    color: antiquewhite;
+}
+.main-header h2 {
+    color: aliceblue;
+}
+.works {
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+.my-work h2{
+    margin-top: 5%;
+    font-size: 1.2rem;
+}
+.individual-work {
+    background-color: #0c2f3d;  
+    border-radius: 10px;
+    margin: 1%;
+    width: 98%;
+    /* outline: 2px solid blanchedalmond; */
+}
+.individual-work {
+    display: flex;
+    gap: 10px;
+
+}
+.individual-work:hover {
+    box-shadow: #829467 5px 5px 10px;
+    transform: scale(1.005);
+    transition: box-shadow 0.2s ease;
+}
+.individual-work img {
+    width: 25%;
+    height: 100%;
+    border-radius: 20px;
+}
+.individual-work a {
+    text-decoration: none;
+    color: #829467;
+}
+.button-container {
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+.button-container button {
+    padding: 8px 15px;
+    background-color: transparent;
+    border: 1px solid yellowgreen;
+    color: #9acd32;
+    border-radius: 10px;
+}
+.button-container button:hover {
+    background-color: #0c2f3d;
+    cursor: pointer;
+}
+.writings-card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px;
+    justify-content: space-between;
+}
+.writings-card {
+    width: 90%;
+    background-color: #0c2f3d;
+    border-radius: 10px;
+}
+.writings-card:hover {
+    box-shadow: #829467 5px 5px 10px;
+    transform: scale(1.005);
+    transition: box-shadow 0.2s ease;
+}
+.writings-card * {
+    margin: 2% 5% 0% 5%;
+}
+.writings-card img {
+    margin-top: 5%;
+    width: 90%;
+    height: 45%;
+}
+.writings-card .author::before {
+    content: "Author: ";
+    color: #829467;
+}
+.writings-card .read-time {
+    font-size: 0.8rem;
+    font-weight: 300;
+}
+@media screen and (max-width: 650px) {
+    .open-menu {
+        display: block;
+        color:#9acd32;
+    }
+    .sidebar-container {
+        display: none;
+    }
+    .total-container {
+    grid-template-columns: 10fr;
+    }
+    .writings-card-container {
+        /* outline: 3px solid yellow; */
+        grid-template-columns: 1fr;
+        grid-template-rows: 400px 400px;
+    }
+    .writings-card {
+        width: 100%;
+        margin-top: 10px;
+    }
+    
+
+}
